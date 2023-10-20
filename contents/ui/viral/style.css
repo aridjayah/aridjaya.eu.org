@@ -2439,6 +2439,9 @@ object {
 .reportvid {
 	position: relative;
 	padding-bottom: 18px;
+	font-size:0;
+	visibility: hidden;
+	display:none;
 }
 
 /*** arrows (for all except IE7) **/
