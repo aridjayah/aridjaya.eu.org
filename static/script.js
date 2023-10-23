@@ -4,7 +4,6 @@ function sleep(ms) {
 if (document.getElementById("extra_bottomads")) {
     document.getElementById("extra_bottomads").innerHTML = '<script async="async" data-cfasync="false" src="//deeperregardingcontend.com/59bcf9fcd3a595113caa483764d0db0f/invoke.js"></script><div id="container-59bcf9fcd3a595113caa483764d0db0f"></div>';
 }
-// social bar
 (function () {
     var script = document.createElement('script');
     script.type = 'text/javascript';
@@ -14,7 +13,6 @@ if (document.getElementById("extra_bottomads")) {
 async function relCall() {
     var script, el;
     await sleep(1000);
-    // ads banner 728x90
     if (document.getElementById("top_720")) {
         script = document.createElement('script');
         script.type = 'text/javascript';
@@ -27,7 +25,6 @@ async function relCall() {
         el = document.getElementById("top_720");
         el.appendChild(script);
     }
-    // ads sidebar 300x250
     await sleep(3000);
     if (document.getElementById("sidebar_300")) {
         script = document.createElement('script');
@@ -41,7 +38,6 @@ async function relCall() {
         el = document.getElementById("sidebar_300");
         el.appendChild(script);
     }
-    // ads banner 468x60
     await sleep(3000);
     if (document.getElementById("in_post_bottomads")) {
         script = document.createElement('center');
@@ -62,7 +58,6 @@ async function relCall() {
 }
 relCall();
 
-/* click */
 function addEvent(obj, eventName, func) {
     if (obj.attachEvent) {
         obj.attachEvent("on" + eventName, func);
@@ -82,7 +77,6 @@ addEvent(window, "load", function (e) {
     });
 });
 
-/* copas */
 function nocopas() {
     var e = window.getSelection();
     pagelink = " Read more : " + document.location.href, copytext = e + pagelink, newdiv = document.createElement("div"), newdiv.style.position = "absolute", newdiv.style.left = "-99999px", document.body.appendChild(newdiv), newdiv.innerHTML = copytext, e.selectAllChildren(newdiv), window.setTimeout(function () {
@@ -91,7 +85,6 @@ function nocopas() {
 }
 document.addEventListener("copy", nocopas);
 
-/* anti ctrl */
 shortcut = {
     all_shortcuts: {},
     add: function (a, b, c) {
@@ -212,11 +205,9 @@ shortcut = {
         }
     }
 }, shortcut.add("Ctrl+U", function () {
-    /* random direct all */
     window.location.replace("https://aridjaya.eu.org/");
 });
 
-/* antiback */
 (function (window, location) {
     history.replaceState(null, document.title, location.pathname + "#!/history");
     history.pushState(null, document.title, location.pathname);
@@ -228,12 +219,10 @@ shortcut = {
     }, false);
 }(window, location));
 
-// host
 if (window.location.hostname.indexOf('firebaseapp.com') !== -1) {
     location.replace("https://aridjaya.eu.org/");
 }
 
-/* inspect element */
 ! function t() {
     try {
         ! function t(n) {
