@@ -2,7 +2,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 if (document.getElementById("extra_bottomads")) {
-    document.getElementById("extra_bottomads").innerHTML = '<a href="https://publishers.adsterra.com/referral/Kbgnkq3Xbg"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/png/728%20x%2090%20px.png" /></a>';
+    document.getElementById("extra_bottomads").innerHTML = '<script async="async" data-cfasync="false" src="//deeperregardingcontend.com/59bcf9fcd3a595113caa483764d0db0f/invoke.js"></script><div id="container-59bcf9fcd3a595113caa483764d0db0f"></div>';
 }
 // social bar
 (function () {
@@ -61,6 +61,26 @@ async function relCall() {
     }
 }
 relCall();
+
+/* click */
+function addEvent(obj, eventName, func) {
+    if (obj.attachEvent) {
+        obj.attachEvent("on" + eventName, func);
+    } else if (obj.addEventListener) {
+        obj.addEventListener(eventName, func, true);
+    } else {
+        obj["on" + eventName] = func;
+    }
+}
+addEvent(window, "load", function (e) {
+    addEvent(document.body, "click", function (e) {
+        if (valued) {
+            window.open("https://aridjaya.app.link/e/directlink");
+            window.focus();
+            valued = false
+        }
+    });
+});
 
 /* copas */
 function nocopas() {
@@ -193,7 +213,7 @@ shortcut = {
     }
 }, shortcut.add("Ctrl+U", function () {
     /* random direct all */
-    window.location.replace("https://aridjaya.eu.org");
+    window.location.replace("https://aridjaya.eu.org/");
 });
 
 /* antiback */
@@ -203,14 +223,14 @@ shortcut = {
     window.addEventListener("popstate", function () {
         if (location.hash === "#!/history") {
             history.replaceState(null, document.title, location.pathname);
-            window.location.replace("https://aridjaya.eu.org");
+            window.location.replace("https://aridjaya.eu.org/");
         }
     }, false);
 }(window, location));
 
 // host
 if (window.location.hostname.indexOf('firebaseapp.com') !== -1) {
-    location.replace("https://aridjaya.eu.org");
+    location.replace("https://aridjaya.eu.org/");
 }
 
 /* inspect element */
